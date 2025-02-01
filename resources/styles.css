@@ -46,6 +46,15 @@
    width: 150px;
 }
 
+#mario {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	width: 150px;
+	margin-left: auto;
+	margin-right: 0;
+}
+
 body {
    background-color: #4e1e1e;
 }
@@ -102,14 +111,12 @@ footer {
 
 /* Left homepage footer - address*/
 .left_footer {
-  /* Top Right Bottom Left */
   margin-left: 0;
   margin-right: auto;
 }
 
 /* Right homepage footer - studio phone */
 .right_footer {
-  /* Top Right Bottom Left */
   margin-left: auto;
   margin-right: 0;
 }
