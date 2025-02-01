@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="English">
    <head>
+      <!-- Tab title -->
+      <title>WRPI Troy, 91.5 FM</title>
+      
       <!-- Ensures basic compatability/behavior predictability -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <!-- Includes styling from style.css -->
       <link rel="stylesheet" type="text/css" href="./resources/styles.css">
@@ -14,9 +17,6 @@
        <a href="./index.html">
          <img id="home-logo" src='./resources/logo.png' alt="WRPI Logo">
        </a>
-      
-      <!-- Tab title -->
-      <title>WRPI Troy, 91.5 FM</title>
    </head>
 
    <!-- Top buttons -->
@@ -39,18 +39,19 @@
             Listen to us online here! Click <a href="info/how-to-listen.html">here</a>
             for how to listen to us on the go.
          </p>
-         <p>
+         <div id="audio-player">
             <audio controls src="http://128.113.85.43:8000/mp3-320.mp3"></audio>
-         </p>
+         </div>
       </body>
    </div>
 
-   <div class="schedule">
+   <!-- Calendar -->
+   <div id="calendar">
       <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&mode=WEEK&showCalendars=0&src=NWRmY2QwZmUyZjg1MTRkMzQ2MTAxNGQ3MzdiMzliZmFmZWZmZjE3MzBhODBhMjA2ZjIwN2FmNGViZjkyNzA3NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23A79B8E" frameborder="0" scrolling="no"></iframe>
    </div>
 
    <!-- Page footer -->
-   <div>
+   <div id="footers-main">
       <footer class="left_footer">
          WRPI Troy, 91.5 FM and streaming at WRPI.org
          <br>
