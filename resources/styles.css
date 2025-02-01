@@ -63,10 +63,8 @@ iframe {
 }
 
 footer {
+  background-color: #340404;
   padding: 0.5em;
-}
-
-.left_footer {
   /* Top Right Bottom Left */
   box-shadow: 2px 2px 7px #000000;
   color: #c3c3c3;
@@ -76,6 +74,9 @@ footer {
   text-align: center;
   text-shadow: 2px 2px 3px #000000;
   border: 2px double #c3c3c3;;
+}
+
+.left_footer {
   position: absolute;
   text-align: left;
   bottom: 0.5em;
@@ -84,15 +85,6 @@ footer {
 }
 
 .right_footer {
-  /* Top Right Bottom Left */
-  box-shadow: 2px 2px 7px #000000;
-  color: #c3c3c3;
-  max-width: fit-content;
-  border-radius: 5px;
-  font-family: 'Courier New', monospace;
-  text-align: right;
-  text-shadow: 2px 2px 3px #000000;
-  border: 2px double #c3c3c3;
   position: absolute;
   bottom: 0.5em;
   right: 0;
