@@ -146,6 +146,7 @@ footer {
   
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+   z-index: 1;
    border: 0.5px solid #c3c3c3;
    border-radius: 5px;
    display: none;
