@@ -2,6 +2,7 @@
 .main-title {
    display: flex;
    position: relative;
+   justify-content: center;
    /* Top Right Bottom Left */
    box-shadow: 1px 1px 2px #000000;
    max-width: fit-content;
@@ -38,6 +39,7 @@
 #audio-player {
    display: flex;
    position: relative;
+   justify-content: center;
 }
 
 #home-logo {
@@ -65,6 +67,7 @@ a:visited {
 iframe {
   display: flex;
   position: relative;
+  justify-content: center;
   /* Top Right Bottom Left */
   margin: auto;
   min-width: 50%;
@@ -77,6 +80,7 @@ iframe {
 #footers-main {
   display: flex;
   position: relative;
+  justify-content: center;
   width: 100%;
   /* Top Right Bottom Left */
   margin: 2em auto 2em auto;
