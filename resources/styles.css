@@ -68,14 +68,29 @@ a:visited {
    margin: 2em auto 2em auto;
 }
 
-iframe {
+#calendar iframe {
    display: flex;
    position: relative;
    justify-content: center;
-   /* Top Right Bottom Left */
    margin: auto;
-   min-width: 50%;
+   width: 98%;
+   max-width: 900px;
    min-height: 30.7em;
+   box-shadow: 2px 2px 7px #000000;
+   border-radius: 5px;
+}
+
+#broadcastrange {
+   margin: 2em auto 2em auto;
+}
+
+#broadcastrange img {
+   display: flex;
+   position: relative;
+   justify-content: center;
+   margin: auto;
+   max-width: 495px;
+   width: 98%;
    box-shadow: 2px 2px 7px #000000;
    border-radius: 5px;
 }
