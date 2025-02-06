@@ -15,13 +15,65 @@
       <!-- Favicon -->
       <link rel='icon' href='./resources/favicon.ico' type='image/x-icon'>
 
-      <!-- Logo -->
-      <a href="./">
-         <img id="home-logo" src='./resources/logo.png' alt="WRPI Logo">
-      </a>
+      <!-- Banner -->
+       <div class="main-banner">
+         <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function openDropdown(id) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               var i;
+               for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if ( dropdowns[i] != document.getElementById(id) ) {
+                     openDropdown.classList.remove('show');
+                  }
+               }
+               document.getElementById(id).classList.toggle("show");
+            }
+            // Close the dropdown if the user clicks in window.
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+               var dropdowns = document.getElementsByClassName("dropdown-content");
+               var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                     var openDropdown = dropdowns[i];
+                     if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                     }
+                  }
+               }
+            }
+         </script>
+         <ul class="main-banner-content">
+            
+            <!-- Logo -->
+            <a href="./">
+               <img id="home-logo" src='./resources/logo.png' alt="WRPI Logo">
+            </a>
+            
+            <!-- Main menu -->
+            <div class="dropdown">
+               <button onclick="openDropdown('links-1')" class="dropbtn">Menu</button>
+               <div class="dropdown-content" id="links-1">
+                  <li><a href="afterdark/">After Dark</a></li>
+                  <li><a href="wgoh/">What's Going On Here?</a></li>
+                  <li><a href="about/who-we-are.html">Who We Are</a></li>
+                  <li><a href="about/contact.html">Contact Us</a></li>
+               </div>
+            </div>
+
+            <div class="dropdown">
+               <button onclick="openDropdown('links-2')" class="dropbtn">Menu 2</button>
+               <div class="dropdown-content" id="links-2">
+                  <li><a href="afterdark/">After Dark</a></li>
+               </div>
+            </div>
+         </ul>
+      </div>
    </head>
 
-   <!-- Top buttons -->
+   <!-- Top buttons
    <div class="dropdown">
       <button class="dropbtn">Menu</button>
       <div class="dropdown-content" id="links">
@@ -30,7 +82,7 @@
          <a href="about/who-we-are.html">Who We Are</a>
          <a href="about/contact.html">Contact Us</a>
       </div>
-    </div>
+    </div> -->
 
    <div class="body-text">
       <body>
