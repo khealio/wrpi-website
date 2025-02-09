@@ -1,15 +1,13 @@
 /* Exclusively for the page heading */
 .main-title {
-	font-family: "Gloock", sans-serif;
+	font-family: "Cabin", sans-serif;
 	display: flex;
 	position: relative;
 	justify-content: center;
-	box-shadow: 1px 1px 2px #000000;
 	max-width: fit-content;
 	max-height: fit-content;
 	border: none;
 	border-radius: 5px;
-	text-shadow: 1px 1px 2px #000000;
 	margin: auto;
 	padding: 10px;
 	background-color: #340404;
@@ -17,18 +15,16 @@
 
 /* For the page body text*/
 .body-text {
-	box-shadow: 2px 2px 7px #000000;
 	color: #c3c3c3;
-	border: none;
 	border-radius: 5px;
 	max-width: 800px;
 	max-height: 600px;
 	font-family: "Cabin", sans-serif;
 	text-align: center;
-	text-shadow: 2px 2px 3px #000000;
 	margin: auto;
 	padding: 2em;
 	line-height: 1.7em;
+	box-shadow: 0 0 7px black;
 }
 
 #audio-player {
@@ -79,7 +75,6 @@ a:visited {
 	width: 98%;
 	max-width: 900px;
 	min-height: 30.7em;
-	box-shadow: 2px 2px 7px #000000;
 	border-radius: 5px;
 }
 
@@ -94,7 +89,6 @@ a:visited {
 	margin: auto;
 	max-width: 495px;
 	width: 98%;
-	box-shadow: 2px 2px 7px #000000;
 	border-radius: 5px;
 }
 
@@ -103,19 +97,16 @@ a:visited {
 	display: flex;
 	align-self: flex-end;
 	justify-content: space-between;
-	margin: auto;
 	text-align: center;
-	margin-top: 2em;
+	margin: 2em auto auto;
 }
 
 /* All footers */
 footer {
-	box-shadow: 2px 2px 5px #000000;
 	max-width: 40%;
 	font-family: "Cabin", sans-serif;
 	color: #c3c3c3;
 	background-color: #340404;
-	text-shadow: 1px 1px 2px #000000;
 	border: none;
 	border-radius: 5px;
 	position: relative;
@@ -140,7 +131,6 @@ footer {
 
 .main-banner {
 	list-style-type: none;
-	box-shadow: 1px 1px 3px #000000;
 	background-color: #340404;
 	border: none;
 	border-radius: 5px;
@@ -162,10 +152,8 @@ footer {
 	font-family: "Cabin", sans-serif;
 	font-size: larger;
 	color: #c3c3c3;
-	box-shadow: 1px 1px 3px #000000;
 	background-color: #af1919;
-	text-shadow: 1px 1px 2px #535353;
-	border: none;
+	border: 2px solid #340404;
 	border-radius: 5px;
 	padding: 10px;
 }
@@ -187,10 +175,8 @@ footer {
 	position: absolute;
 	background-color: #af1919;
 	min-width: 150px;
-	box-shadow: 2px 2px 3px #000000;
 	font-family: "Cabin", sans-serif;
 	font-size: medium;
-	text-shadow: 1px 1px 2px #000000;
 	color: black;
 }
 
