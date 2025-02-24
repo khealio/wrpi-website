@@ -1,16 +1,86 @@
-/* Exclusively for the page heading */
-.main-title {
-	font-family: "Cabin", sans-serif;
+/* Banner Code Inspired by W3Schools */
+
+.main-banner {
+	list-style-type: none;
+	background-color: #340404;
+	border: none;
+	border-radius: 5px;
+	margin: 0 0 2em;
+	padding: 0;
+}
+
+.main-banner-content {
+	display: inline;
+}
+
+/* Dropdown Code Inspired by W3Schools */
+
+/* Dropdown Button */
+.dropbtn {
 	display: flex;
 	position: relative;
 	justify-content: center;
+	font-family: "Cabin", sans-serif;
+	font-size: larger;
+	color: #c3c3c3;
+	background-color: #af1919;
+	border: 2px solid #340404;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	display: inline-block;
+	position: relative;
+	left: 0.75em;
+	top: 0.2em;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	z-index: 1;
+	border: none;
+	border-radius: 5px;
+	display: none;
+	position: absolute;
+	background-color: #af1919;
+	min-width: 150px;
+	font-family: "Cabin", sans-serif;
+	font-size: medium;
+	color: black;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	border-radius: 5px;
+	color: #c3c3c3;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #a34949;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #a34949; box-shadow: none;}
+
+/* Show the dropdown menu on click */
+.show {display: block;}
+
+/* Exclusively for the page heading */
+.main-title {
+	font-family: "Cabin", sans-serif;
 	max-width: fit-content;
 	max-height: fit-content;
 	border: none;
 	border-radius: 5px;
-	margin: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 	padding: 10px;
 	background-color: #340404;
+	box-shadow: 0 0 7px black;
 }
 
 /* For the page body text*/
@@ -20,17 +90,14 @@
 	max-width: 800px;
 	max-height: 600px;
 	font-family: "Cabin", sans-serif;
-	text-align: center;
-	margin: auto;
-	padding: 2em;
+	padding: 10px;
 	line-height: 1.7em;
-	box-shadow: 0 0 7px black;
 }
 
-#audio-player {
-	display: flex;
-	position: relative;
-	justify-content: center;
+/* Work in progress!! Trying to style this a-la WERS */
+.audio {
+	display: block;
+	border: 2px solid black;
 }
 
 .home-logo {
@@ -126,74 +193,3 @@ footer {
 	margin-left: auto;
 	right: 0;
 }
-
-/* Banner Code Inspired by W3Schools */
-
-.main-banner {
-	list-style-type: none;
-	background-color: #340404;
-	border: none;
-	border-radius: 5px;
-	margin: 0 0 2em;
-	padding: 0;
-}
-
-.main-banner-content {
-	display: inline;
-}
-
-/* Dropdown Code Inspired by W3Schools */
-
-/* Dropdown Button */
-.dropbtn {
-	display: flex;
-	position: relative;
-	justify-content: center;
-	font-family: "Cabin", sans-serif;
-	font-size: larger;
-	color: #c3c3c3;
-	background-color: #af1919;
-	border: 2px solid #340404;
-	border-radius: 5px;
-	padding: 10px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-	display: inline-block;
-	position: relative;
-	left: 0.75em;
-	top: 0.2em;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-	z-index: 1;
-	border: none;
-	border-radius: 5px;
-	display: none;
-	position: absolute;
-	background-color: #af1919;
-	min-width: 150px;
-	font-family: "Cabin", sans-serif;
-	font-size: medium;
-	color: black;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-	border-radius: 5px;
-	color: #c3c3c3;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #a34949;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #a34949; box-shadow: none;}
-
-/* Show the dropdown menu on click */
-.show {display: block;}
