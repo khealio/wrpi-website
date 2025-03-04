@@ -1,5 +1,10 @@
 /* Banner Code Inspired by W3Schools */
 
+body {
+	font-family: "Cabin", sans-serif;
+	color: #c3c3c3;
+}
+
 .main-banner {
 	list-style-type: none;
 	background-color: #340404;
@@ -94,12 +99,6 @@
 	line-height: 1.7em;
 }
 
-/* Work in progress!! Trying to style this a-la WERS */
-.audio {
-	display: block;
-	border: 2px solid black;
-}
-
 .home-logo {
 	display: inline-block;
 	position: relative;
@@ -125,20 +124,16 @@ a:link {
 	color: white;
 }
 
-a:visited {
+.body-text a:visited {
 	color: grey;
 }
 
 #calendar {
-	/* Top Right Bottom Left */
-	margin: 2em auto 2em auto;
+	margin-bottom: 2em;
 }
 
 #calendar iframe {
-	display: flex;
-	position: relative;
-	justify-content: center;
-	margin: auto;
+	margin: auto auto auto 0.5em;
 	width: 98%;
 	max-width: 900px;
 	min-height: 30.7em;
@@ -159,37 +154,17 @@ a:visited {
 	border-radius: 5px;
 }
 
-/* div for homepage footers */
-#footers-main {
+#audio-player {
 	display: flex;
-	align-self: flex-end;
-	justify-content: space-between;
-	text-align: center;
-	margin: 2em auto auto;
+	justify-content: center;
+	position: sticky;
+	bottom: 0;
 }
 
-/* All footers */
-footer {
-	max-width: 40%;
-	font-family: "Cabin", sans-serif;
-	color: #c3c3c3;
-	background-color: #340404;
-	border: none;
-	border-radius: 5px;
+.footer {
 	position: relative;
-	bottom: 0.5em;
-	padding: 0.5em;
-	margin: 0.5em;
-}
-
-/* Left homepage footer - address*/
-.left_footer {
-	left: 0;
-	margin-right: auto;
-}
-
-/* Right homepage footer - studio phone */
-.right_footer {
-	margin-left: auto;
-	right: 0;
+	margin: 2em 0 2em;
+	background-color: #340404;
+	border-radius: 5px;
+	padding: 10px;
 }
