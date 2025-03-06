@@ -60,8 +60,12 @@
 			for other ways to tune in.
 		</p>
 		<div id="audio-player">
-			<audio controls src="http://128.113.85.43:8000/mp3-320.mp3"></audio>
-		</div>
+			<audio id="player" src="http://128.113.85.43:8000/mp3-320.mp3"></audio>
+                	<button id="play" onclick="document.getElementById('player').play()">&#x23f5;</button>
+    			<button id="pause" onclick="document.getElementById('player').pause()">&#x23f8;</button>
+    			<button id="up" onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+    			<button id="down" onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+  		</div>
 	</div>
 
 	<!-- Calendar -->
