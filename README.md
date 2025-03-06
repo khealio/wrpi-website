@@ -1,6 +1,7 @@
 # WRPI.org - The Upstate Underground's Homepage
 Hello! This is the project page for [WRPI.org](http://wrpi.org), the website for Rensselaer Polytechnic Institute's independent, student-run radio station
 located in Troy, NY. We broadcast on 91.5 FM in a ~75-mile radius out from the Albany, NY metro area. If you'd like to contribute to the project, read on :)
+Keep it locked!
 
 ## How to Contribute
 Clone our Git repo, make your changes, and make a pull request documenting your changes *as extensively as possible.* Your changes will
