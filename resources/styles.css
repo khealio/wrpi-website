@@ -41,10 +41,11 @@
 
 #audio-player button {
     	flex: 1; 
-    	max-width: fit-content;
+    	max-width: 100%;
     	max-height: fit-content;
     	border: none;
     	background-color: white;
+	font-family: "Cabin", sans-serif;
     	font-size: 24px;
     	cursor: pointer;
     	text-align: center;
