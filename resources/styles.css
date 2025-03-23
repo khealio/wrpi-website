@@ -54,6 +54,11 @@
     flex-shrink: 0;
 }
 
+#play_indicator {
+    flex-shrink: 0;
+    opacity: 0%;
+}
+
 .home-logo {
     display: inline-block;
     position: relative;
