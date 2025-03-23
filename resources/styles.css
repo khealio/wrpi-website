@@ -39,7 +39,7 @@
     padding-top: 5px;
 }
 
-#audio-player button {
+#audio-player #playpause {
     width: 32.5px;
     height: 38.5px;
     border: none;

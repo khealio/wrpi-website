@@ -4,11 +4,11 @@ function toggle_play() {
 
     if (player.paused) {
         player.play();
-        play_button.textContent = "\u{23f8}";
+        play_button.src = "./resources/pause.png";
     }
     else {
         player.pause();
-        play_button.textContent = "\u{23f5}";
+        play_button.src = "./resources/play.png";
     }
 }
 
