@@ -40,8 +40,7 @@
 }
 
 #audio-player button {
-    flex: 1;
-    max-width: 100%;
+    width: 32.5px;
     height: 38.5px;
     border: none;
     background-color: white;
@@ -52,6 +51,7 @@
     text-align: center;
     border-radius: 5px;
     padding-bottom: 5px;
+    flex-shrink: 0;
 }
 
 .home-logo {
