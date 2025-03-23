@@ -14,6 +14,9 @@
 
     <!-- Favicon -->
     <link rel='icon' href='./resources/favicon.ico' type='image/x-icon'>
+
+    <!-- Audio Player Script -->
+    <script src="./resources/webplayer.js"></script>
 </head>
 
 <body>
@@ -61,8 +64,8 @@
     </p>
     <div id="audio-player">
         <audio id="player" src="https://stream.wrpi.org/mp3-320.mp3"></audio>
-        <button id="play" onclick="document.getElementById('player').play()">&#x23f5;</button>
-        <button id="pause" onclick="document.getElementById('player').pause()">&#x23f8;</button>
+        <button id="playpause" onclick="toggle_play();">&#x23f5;</button>
+        <input id="volume" class="slider" type="range" min="0" max="100" value="100">
         <!-- Volume buttons pending rewrite -->
         <!-- <button id="up" onclick="document.getElementById('player').volume += 0.5">Vol +</button> -->
         <!-- <button id="down" onclick="document.getElementById('player').volume -= 0.5">Vol -</button> -->
