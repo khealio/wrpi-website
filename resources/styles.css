@@ -22,7 +22,7 @@
     font-family: "Cabin", sans-serif;
     text-align: center;
     margin: auto;
-    padding: 2em;
+    padding: 1em;
     line-height: 1.7em;
     box-shadow: 0 0 7px black;
 }
@@ -42,7 +42,6 @@
 #audio-player #playpause {
     width: 32px;
     height: 38px;
-    border: none;
     background-color: white;
     font-family: "Cabin", sans-serif;
     cursor: pointer;
@@ -53,6 +52,8 @@
 }
 
 #play_indicator {
+    margin: 0 auto;
+    padding-left: 4em;
     flex-shrink: 0;
     opacity: 0;
 }

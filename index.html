@@ -16,7 +16,7 @@
     <link rel='icon' href='./resources/favicon.ico' type='image/x-icon'>
 
     <!-- JQuery dependency for other scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="resources/jquery.js"></script>
 
     <!-- Audio Player Script -->
     <script src="./resources/webplayer.js"></script>
@@ -56,21 +56,23 @@
 <div class="body-text">
     <!-- Page heading -->
     <h1 class="main-title">
-        Welcome to WRPI Troy!
+           Welcome to WRPI Troy!
     </h1>
 
     <p class="main-subtitle">
-        <!-- Listen to us online here! -->
-        Listen to us on 91.5 FM in New York's Capital District! <br>
+        Tune in on 91.5 FM in New York's Capital Region and other regions in our
+        <a href="listen/">range!</a><br>
         Play below to listen to our online stream, or click <a href="listen/">here</a>
         for other ways to tune in.
     </p>
+
     <div id="audio-player">
         <audio id="player" src="https://stream.wrpi.org/mp3-320.mp3"></audio>
         <input id="playpause" type="image" src="./resources/play.png" onclick="toggle_play();" alt="Play/pause button">
         <label for="volume">Volume<input id="volume" class="slider" type="range" min="0" max="100" value="100"></label>
-        <p id="play_indicator">now playing...</p>
     </div>
+
+    <p id="play_indicator">now playing...</p>
 </div>
 
 <!-- Calendar -->

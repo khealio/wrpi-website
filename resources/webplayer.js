@@ -1,14 +1,14 @@
 // Global variables needed for pulsing "now playing..." text
-var play_text_fade_percent = 0;
-var play_text_fade_percent_inc = false;
-var play_text_fade_percent_max = 100;
-var play_text_fade_percent_min = 40;
-var play_text_fade_percent_step = 1;
+let play_text_fade_percent = 0;
+let play_text_fade_percent_inc = false;
+const play_text_fade_percent_max = 100;
+const play_text_fade_percent_min = 40;
+const play_text_fade_percent_step = 1;
 
 function toggle_play() {
-    var player      = document.getElementById("player");
-    var play_button = document.getElementById("playpause");
-    var play_text   = document.getElementById("play_indicator");
+    const player = document.getElementById("player");
+    const play_button = document.getElementById("playpause");
+    const play_text = document.getElementById("play_indicator");
 
     if (player.paused) {
         player.play();
@@ -25,15 +25,15 @@ function toggle_play() {
 }
 
 function update_vol() {
-    var volume = document.getElementById("volume");
-    var player = document.getElementById("player");
+    const volume = document.getElementById("volume");
+    const player = document.getElementById("player");
 
     player.volume = (parseInt(volume.value)/100);
 }
 
 function pulse_play_text() {
     // Condition for when the text should be hidden
-    if (play_text_fade_percent == 0) {
+    if (play_text_fade_percent === 0) {
         return;
     }
 
@@ -52,7 +52,7 @@ function pulse_play_text() {
     }
 
     // Set fade percent to element
-    var play_text = document.getElementById("play_indicator");
+    const play_text = document.getElementById("play_indicator");
     play_text.style.opacity = play_text_fade_percent+"%";
 }
 
@@ -61,10 +61,4 @@ $(document).ready(function () {
 
     // Set the interval to pulse the "now playing..." text when the stream is playing
     setInterval(pulse_play_text, 40);
-
-    // Correct the player position from the "now playing..." text
-    var player_div = document.getElementById('audio-player'); 
-    var play_text  = document.getElementById('play_indicator');
-
-    player_div.style.paddingLeft = play_text.offsetWidth+"px"; 
 });
