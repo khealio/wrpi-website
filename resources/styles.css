@@ -39,19 +39,26 @@
     padding-top: 5px;
 }
 
-#audio-player button {
-    flex: 1;
-    max-width: 100%;
-    max-height: fit-content;
+#audio-player #playpause {
+    width: 32px;
+    height: 38px;
     border: none;
     background-color: white;
     font-family: "Cabin", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
     cursor: pointer;
     text-align: center;
     border-radius: 5px;
-    padding-bottom: 5px;
+    padding: 2px;
+    flex-shrink: 0;
+}
+
+#play_indicator {
+    flex-shrink: 0;
+    opacity: 0;
+}
+
+#audio-player #label {
+
 }
 
 .home-logo {
