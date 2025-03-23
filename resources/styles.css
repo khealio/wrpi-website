@@ -42,7 +42,7 @@
 #audio-player button {
     flex: 1;
     max-width: 100%;
-    max-height: fit-content;
+    height: 38.5px;
     border: none;
     background-color: white;
     font-family: "Cabin", sans-serif;
