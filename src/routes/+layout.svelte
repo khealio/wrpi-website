@@ -134,7 +134,11 @@
 </div>
 
 <div class="alert-banner"><p>We are currently off-air on FM due to some technical difficulties with our antenna. The webstream is still up and running for the time being. We're on it!</p></div>
-{@render children()}
+
+<div class="h-full w-full">
+	{@render children()}
+</div>
+
 
 <div id="audio-player">
 	<audio
@@ -153,9 +157,7 @@
 	/>
 
 	<label for="volume" class="ios-hidden">
-		Volume
-
-		<input
+		Volume<input
 			id="volume"
 			class="slider ios-hidden"
 			type="range"
@@ -180,7 +182,7 @@
 
 <!-- Page footer -->
 
-<footer class="footer">
+<footer class="footer align-bottom">
 	<div id="footer-left">
 		WRPI Troy, 91.5 FM and streaming at WRPI.org 
 		<br />
